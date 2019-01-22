@@ -11,7 +11,6 @@ app.listen(port, function () {
   console.log('Hello World')
 })
 
-app.METHOD(PATH, HANDLER)
 
 app.post('/chat', function (req, res) {
   res.send('Got a POST request');
