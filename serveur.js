@@ -8,9 +8,8 @@ app.get('/Hello', function (req, res) {
 })
 
 app.post('/chat', function (req, res) {
-  res.send('Un chat à Paris ')
+  res.send('Got a POST request');
 })
-
 
 app.listen(port, function () {
   console.log('Hello World')
