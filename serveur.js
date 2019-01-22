@@ -11,7 +11,7 @@ app.post('/chat', function (req, res) {
   res.send('Got a POST request');
 })
 
-app.listen(port, function () {
+app.listen(3000, function () {
   console.log('Hello World')
 })
 
