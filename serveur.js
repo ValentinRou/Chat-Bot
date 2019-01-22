@@ -13,7 +13,7 @@ app.post('/chat', function (req, res) {
   res.send('Got a POST request');
 })
 
-app.listen(port, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log('Hello World')
 })
 
