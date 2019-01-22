@@ -8,7 +8,7 @@ app.get('/Hello', function (req, res) {
 })
 
 app.post('/chat', function (req, res) {
-  res.send('Un chat à Paris ');
+  res.send('Un chat à Paris ')
 })
 
 
