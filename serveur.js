@@ -7,8 +7,8 @@ app.get('/Hello', function (req, res) {
   res.send('Hello World')
 })
 
-app.post('/chat', function (req, res) {
-  res.send('Got a POST request');
+app.get('/chat', function (req, res) {
+  res.send('ville');
 })
 
 app.listen(process.env.PORT || 3000, function () {
