@@ -7,8 +7,19 @@ app.get('/Hello', function (req, res) {
   res.send('Hello World')
 })
 
-app.get('/chat', function (req, res) {
-  res.send('ville');
+app.post('/chat', function (req, res) {
+  console.log(req.body);
+  res.json(req.body);
+  if( req.json ==="ville" ){
+      return "Nous sommes à Paris"
+  }
+
+
+
+
+
+
+
 })
 
 app.listen(process.env.PORT || 3000, function () {
