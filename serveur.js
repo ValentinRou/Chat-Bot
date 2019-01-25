@@ -13,13 +13,9 @@ app.post('/chat', function (req, res) {
   if( req.json ==="ville" ){
       return "Nous sommes à Paris"
   }
-
-
-
-
-
-
-
+  if( req.json === "méteo"){
+    return "Il fait beau"
+  }
 })
 
 app.listen(process.env.PORT || 3000, function () {
