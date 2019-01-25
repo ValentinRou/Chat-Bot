@@ -1,5 +1,7 @@
 const express = require('express')
 var bodyParser = require('body-parser');
+var multer = require('multer'); // v1.0.5
+var upload = multer(); 
 const app = express()
 const port = process.env.PORT;
 console.log(`Your port is ${port}`);
