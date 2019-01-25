@@ -22,7 +22,7 @@ app.post('/chat', function (req, res) {
   }
   if( req.json === "méteo"){
     return "Il fait beau"
-  }-
+  }
 })
 
 app.listen(process.env.PORT || 3000, function () {
