@@ -3,6 +3,10 @@ const app = express()
 const port = process.env.PORT;
 console.log(`Your port is ${port}`);
 
+
+app.use(bodyParser.json()); 
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.get('/Hello', function (req, res) {
   res.send('Hello World')
 })
@@ -15,7 +19,7 @@ app.post('/chat', function (req, res) {
   }
   if( req.json === "méteo"){
     return "Il fait beau"
-  }
+  }-
 })
 
 app.listen(process.env.PORT || 3000, function () {
