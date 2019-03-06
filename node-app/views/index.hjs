@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='icon' type='image/png' href='public/images/favicon.png' />
+  </head>
+  <body>
+    <div>
+      <img src='public/images/favicon.png' alt='favicon'>
+      <h1>{{ title }}</h1>
+    </div>
+    <p>Welcome to {{ title }}</p>
+
+    <form>
+      <input type='text' name='nom_ville' placeholder='ville'>
+      <br>
+      <textarea id='description' rows='3' name='description' placeholder='description'></textarea>
+      <input type='submit' value='Envoyer' formaction='/ville' formmethod='post'>
+    </form>
+  </body>
+</html>

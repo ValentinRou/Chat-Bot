@@ -1,0 +1,31 @@
+body {
+  padding: 50px;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+div {
+  display: inline-block;
+}
+
+img {
+  width: 22px;
+  height: 22px;
+}
+
+h1 {
+  display: inline-block;
+}
+
+a {
+  color: #00B7FF;
+}
+
+p {
+  white-space: pre-line;
+  white-space: pre-wrap;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}

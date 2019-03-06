@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ville</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      <h1>{{ ville }}</h1>
+      <p>{{ description }}</p>
+      <p>{{ latt }}</p>
+      <p>{{ longt }}</p>
+    <div id='map'></div>
+    <script>
+      var longt = {{ longt }};
+      var latt = {{ latt }};
+      function initMap() {
+        var ville = {lat: latt, lng: longt};
+        console.log(ville);
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: ville
+        });
+        var marker = new google.maps.Marker({
+          position: ville,
+          map: map
+        });
+      }
+    </script>
+
+    <script async defer
+    src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDuu1LgXLJKOw5SODprX-32ftEj2cXyr5k&callback=initMap'>
+    </script>
+
+  </body>
+</html>

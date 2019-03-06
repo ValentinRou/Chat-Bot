@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Erreur</title>
+    <link rel='stylesheet' href='/stylesheets/error.css' />
+  </head>
+  <body>
+    <h1>Erreur: la ville demandée n'a pas été trouvée !</h1>
+    <form>
+        <input type='button' value='Retour' onclick='history.go(-1)'>
+    </form>
+  </body>
+</html>
